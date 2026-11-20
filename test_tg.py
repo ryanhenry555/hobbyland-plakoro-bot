@@ -8,8 +8,9 @@ sys.stdout.reconfigure(encoding="utf-8")
 API_URL = "https://backend.hobbylandeshop.com/api/products"
 STATE_FILE = "seen_skus.json"
 
-TG_BOT_TOKEN = os.environ.get("9281972053:AAFjX4xCq-lImPAvdh-l354KtI3E4p5BUz8", "").strip()
-TG_CHAT_ID = os.environ.get("407555417", "").strip()
+
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "").strip()
+TG_CHAT_ID = os.environ.get("TG_CHAT_ID", "").strip()
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
