@@ -26,7 +26,7 @@ jobs:
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: python test.py
+        run: python test_tg.py
 
       - name: Save updated seen_skus.json
         run: |
